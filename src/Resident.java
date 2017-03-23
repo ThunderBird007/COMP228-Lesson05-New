@@ -14,11 +14,16 @@ public class Resident extends Person {
 	}
 	
 	public String getAddress() {
-		return this._address.toString();
+		try {
+			return this._address.toString();
+		} catch (Exception e) {
+			// TODO: handle exception
+			return "Error: Address not initialized";
+		}
 	}
 	
 	// Constructor
-	Resident(String name, int age, int heightInInches, float massInPounds, String SIN) {
+	Resident(String name, int age, float heightInInches, float massInPounds, String SIN) {
 		super(name, age, heightInInches, massInPounds);
 		this._SIN = SIN;
 		

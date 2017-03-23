@@ -18,7 +18,7 @@ public class Address {
 	public String toString() {
 		String output = "";
 		output += "Address: \n";
-		output = "++++++++++++++++++++++++++++++++++++++++ \n";
+		output += "++++++++++++++++++++++++++++++++++++++++ \n";
 		output += this._streetNumber + " " + this._streetName + "\n";
 		output +=this._cityName + " " + this._provinceName + "\n";
 		return output;

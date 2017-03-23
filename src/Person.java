@@ -38,7 +38,7 @@ public class Person {
 		this._massInPounds = massInPounds;
 	}
 
-	Person(String name, int age, int heightInInches, float massInPounds) {
+	Person(String name, int age, float heightInInches, float massInPounds) {
 		this._name = name;
 		this._age = age;
 		this._heightInInches = heightInInches;
