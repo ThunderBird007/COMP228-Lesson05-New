@@ -1,9 +1,9 @@
 // Super class that we'll use for this example
 public class Person {
-	private int _age;
-	private String _name;
-	private float _heightInInches;
-	private float _massInPounds;
+	protected int _age;
+	protected String _name;
+	protected float _heightInInches;
+	protected float _massInPounds;
 
 	// Getters and Setters (Properties)
 	public int getAge() {
