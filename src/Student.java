@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 
 // Student class
-public class Student extends Resident {
+public class Student extends Resident implements SchoolID {
 	// Private instance variables
 	private String _studentID;
+	private String _schoolID;
 	private ArrayList<Course> _courses = new ArrayList<Course>();
 
 	Student(String name, int age, float heightInInches, float massInPounds, String SIN, String studentID) {
@@ -48,5 +49,11 @@ public class Student extends Resident {
 		}
 		return output;
 	}
+	
+	@Override
+	public void addSchool(String schoolName) {
+		this._schoolID = schoolName;
+	}
+	
 
 }
